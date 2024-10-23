@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Loja de Cheesecake</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff4f1; /* Fundo suave que combina com cheesecakes */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            background-color: #ffc6d0; /* Rosa claro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header img {
+            height: 50px; /* Tamanho do logo */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4a4a4a; /* Cinza suave */
+            font-size: 1.2em;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff8b94; /* Cor de destaque ao passar o mouse */
+            color: white;
+            border-radius: 5px;
+        }
+
+        .carrinho {
+            background-color: #ff8b94;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .carrinho:hover {
+            background-color: #ff6f7d;
+        }
+
+        /* Nome da Loja Centralizado */
+        .nome-loja {
+            font-size: 2.5em;
+            color: #b56576;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+
+        /* Imagem de Cheesecake Centralizada */
+        .imagem-centralizada {
+            margin-top: 50px;
+        }
+
+        .imagem-centralizada img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Seção Sobre Nós */
+        .sobre-nos {
+            background-color: #fff;
+            color: #4a4a4a;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #b56576; /* Tom suave de rosa */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #ff8b94; /* Destaque em rosa claro */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com Logo, Nome da Loja, Menu e Carrinho -->
+    <header>
+        <img src="imagens/logo2.jpg" alt="Logo da Loja"> <!-- Substitua pelo caminho do seu logo -->
+        <h1 class="nome-loja">Cheesecakero</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sabores.html">Sabores</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="carrinho">Carrinho</button> <!-- Botão do carrinho -->
+    </header>
+
+    <!-- Imagem Centralizada de Cheesecake -->
+    <div class="imagem-centralizada">
+        <img src="imagens/cheesecake fundo.jpg" alt="Cheesecake"> <!-- Substitua pelo caminho da sua imagem -->
+    </div>
+
+    <!-- Seção Um Pouco Sobre Nós -->
+    <div class="sobre-nos">
+        <h1>Um Pouco Sobre Nós</h1>
+        <p>Nossa paixão por <span class="highlight">cheesecake</span> começou na cozinha de casa, onde cada fatia era feita com carinho e ingredientes frescos. Ao longo dos anos, aperfeiçoamos receitas tradicionais, trazendo novos sabores e texturas irresistíveis. O que começou como um hobby familiar rapidamente conquistou amigos, vizinhos e, logo, toda a cidade.</p>
+        <p>Na nossa loja, cada <span class="highlight">cheesecake</span> é cuidadosamente preparado para oferecer uma experiência única, combinando cremosidade com uma crosta crocante perfeita. Seja para um café da tarde ou uma ocasião especial, nosso objetivo é fazer com que cada cliente se sinta em casa, saboreando o melhor da confeitaria artesanal.</p>
+    </div>
+
+</body>
+</html>
