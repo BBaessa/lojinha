@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores - Loja de Cheesecake</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff4f1; /* Mesma cor de fundo da página Home */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            background-color: #ffc6d0; /* Rosa claro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header img {
+            height: 50px; /* Tamanho do logo */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4a4a4a; /* Cinza suave */
+            font-size: 1.2em;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff8b94; /* Cor de destaque ao passar o mouse */
+            color: white;
+            border-radius: 5px;
+        }
+
+        .carrinho {
+            background-color: #ff8b94;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .carrinho:hover {
+            background-color: #ff6f7d;
+        }
+
+        /* Estilo da lista de sabores */
+        .sabores-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .sabor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sabor img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .sabor-info {
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .sabor h2 {
+            color: #b56576;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .sabor p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .sabor-preco {
+            font-size: 1.5em;
+            color: #4a4a4a;
+        }
+
+        .adicionar-carrinho {
+            background-color: #ff8b94;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .adicionar-carrinho:hover {
+            background-color: #ff6f7d;
+        }
+         h1 {
+            color: #b56576; /* Tom suave de rosa */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com Logo, Menu e Carrinho -->
+    <header>
+        <img src="imagens/logo2.jpg" alt="Logo da Loja"> <!-- Substitua pelo caminho do seu logo -->
+        <h1 class="nome-loja">Cheesecakero</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sabores.html">Sabores</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="carrinho">Carrinho</button> <!-- Botão do carrinho -->
+    </header>
+
+    <!-- Lista de Sabores -->
+    <div class="sabores-container">
+        <div class="sabor">
+            <img src="imagens/cheesecake amora.jpg" alt="Cheesecake de Amora"> <!-- Substitua pelo caminho da imagem -->
+            <div class="sabor-info">
+                <h2>Cheesecake de Amora</h2>
+                <p>Delicioso cheesecake Amora.</p>
+                <p class="sabor-preco">R$ 30,00</p>
+            </div>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="sabor">
+            <img src="imagens/cheesecake floresta negra.jpg" alt="Cheesecake de Floresta Negra"> <!-- Substitua pelo caminho da imagem -->
+            <div class="sabor-info">
+                <h2>Cheesecake de Floresta Negra</h2>
+                <p>Cheesecake cremoso de Floresta Negra.</p>
+                <p class="sabor-preco">R$ 30,00</p>
+            </div>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="sabor">
+            <img src="imagens/cheesecake limao com framboesa.jpg" alt="Cheesecake de Limão"> <!-- Substitua pelo caminho da imagem -->
+            <div class="sabor-info">
+                <h2>Cheesecake de Limão</h2>
+                <p>Cheesecake leve e refrescante de limão com framboesa.</p>
+                <p class="sabor-preco">R$ 30,00</p>
+            </div>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="sabor">
+            <img src="imagens/cheesecake blueberry 2.jpg" alt="Cheesecake de Blueberry"> <!-- Substitua pelo caminho da imagem -->
+            <div class="sabor-info">
+                <h2>Cheesecake de Blueberry</h2>
+                <p>Cheesecake delicioso de Blueberry.</p>
+                <p class="sabor-preco">R$ 30,00</p>
+            </div>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+</body>
+</html>
