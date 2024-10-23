@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Loja de Cheesecake</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff4f1; /* Fundo suave, mantendo consistência */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            background-color: #ffc6d0; /* Rosa claro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff8b94;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .carrinho {
+            background-color: #ff8b94;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .carrinho:hover {
+            background-color: #ff6f7d;
+        }
+
+        /* Estilo da Seção de Contato */
+        .contato-container {
+            background-color: #fff;
+            color: #4a4a4a;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contato-container h1 {
+            color: #b56576;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contato-container p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .contato-container a {
+            color: #ff8b94;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .contato-container a:hover {
+            color: #ff6f7d;
+        }
+         h1 {
+            color: #b56576; /* Tom suave de rosa */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com Logo, Menu e Carrinho -->
+    <header>
+        <img src="imagens/logo2.jpg" alt="Logo da Loja"> <!-- Substitua pelo caminho do seu logo -->
+        <h1 class="nome-loja">Cheesecakero</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sabores.html">Sabores</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="carrinho">Carrinho</button> <!-- Botão do carrinho -->
+    </header>
+
+    <!-- Seção de Contato -->
+    <div class="contato-container">
+        <h1>Entre em Contato</h1>
+        <p>Estamos aqui para ajudar você a escolher o melhor cheesecake!</p>
+        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+        <p><strong>Email:</strong> <a href="mailto:contato@cheesecakero.com">contato@cheesecakero.com</a></p>
+        <p>Ou visite nossa loja física para experimentar uma fatia no local!</p>
+    </div>
+
+</body>
+</html>
